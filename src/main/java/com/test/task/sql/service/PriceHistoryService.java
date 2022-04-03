@@ -8,4 +8,6 @@ public interface PriceHistoryService {
     void save(PriceHistory element);
 
     List<PriceHistory> findAllByCurrencyPair(String pair);
+
+    void writeToCsv(List<String[]> csvList);
 }
