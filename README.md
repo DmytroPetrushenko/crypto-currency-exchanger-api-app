@@ -18,9 +18,3 @@ Technical task itself consists of two main parts and one optional:
      You need to create an endpoint that will generate a CSV report saved into file.
     - GET ```/cryptocurrencies/csv```
       Report should contain the following fields: Cryptocurrency Name, Min Price, Max Price. So there should be only three records in that report, because we have three different cryptocurrencies. Feel free to use any available library for generating csv files.
-
-### ✔ Task evaluation
-1. All parts of the task were implemented correctly
-2. Quality and style of the code
-3. All possible exception situations are handled properly
-4. The project should be covered with tests.
