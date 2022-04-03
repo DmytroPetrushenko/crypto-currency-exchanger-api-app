@@ -1,18 +1,16 @@
 package com.test.task.sql.controller;
 
-import com.opencsv.CSVWriter;
 import com.test.task.sql.model.PriceHistory;
 import com.test.task.sql.model.dto.response.MaxPriceResponseDto;
 import com.test.task.sql.model.dto.response.MinPriceResponseDto;
 import com.test.task.sql.model.dto.response.SortedPageResponseDto;
 import com.test.task.sql.service.CexIoClient;
 import com.test.task.sql.service.PriceHistoryService;
-
-import java.io.FileWriter;
-import java.io.IOException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
-
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -97,15 +95,15 @@ public class PriceHistoryController {
                     .map(PriceHistory::getPrice)
                     .min(Comparator.naturalOrder())
                     .orElseThrow(() -> {
-                        throw new RuntimeException("Can't get the minimum price of " +
-                                "the currency pair: " + currencyPair + " in DB!");
+                        throw new RuntimeException("Can't get the minimum price of "
+                                + "the currency pair: " + currencyPair + " in DB!");
                     });
             String max = priceHistoryList.stream()
                     .map(PriceHistory::getPrice)
                     .min(Comparator.naturalOrder())
                     .orElseThrow(() -> {
-                        throw new RuntimeException("Can't get the maximum price of " +
-                                "the currency pair: " + currencyPair + " in DB!");
+                        throw new RuntimeException("Can't get the maximum price of "
+                                + "the currency pair: " + currencyPair + " in DB!");
                     });
             csvList.add(new String[]{currencyPair, min, max});
         }

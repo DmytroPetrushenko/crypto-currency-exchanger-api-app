@@ -1,7 +1,6 @@
 package com.test.task.sql.service;
 
 import com.test.task.sql.model.PriceHistory;
-
 import java.util.List;
 
 public interface PriceHistoryService {

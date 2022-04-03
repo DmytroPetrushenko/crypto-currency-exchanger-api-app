@@ -3,9 +3,8 @@ package com.test.task.sql.service.mapper.impl;
 import com.test.task.sql.model.PriceHistory;
 import com.test.task.sql.model.dto.request.PriceHistoryRequestDto;
 import com.test.task.sql.service.mapper.PriceHistoryMapper;
-import org.springframework.stereotype.Component;
-
 import java.time.LocalDateTime;
+import org.springframework.stereotype.Component;
 
 @Component
 public class PriceHistoryMapperImpl implements PriceHistoryMapper {
