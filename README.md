@@ -1,26 +1,7 @@
-# ✅ [Java Test Task] To-Do App
-Dear Candidate,
-
-We've prepared a simple test task for you where you can show all your knowledge and skills in the Java area. Feel free to improvise and don't be afraid of challenges 👀. We all believe that you are full of 📚 knowledge and 💪 motivation.
-
-Respectfully, ORIL team.
-
-P.S. If you have any questions 🤔 or just want to chat 💬, please email me at vyacheslav.perfilyev@oril.co.
-
-P.S.S. I bet that you could do it with your eyes shut and there is literally nothing that could stop you.
-## 📃 Task
-Your goal for the task is to show us as much as you know about Java (Spring) and Back-End development. The app should be not overcomplicated and you have to remember it's not 🚀 rocket science, so do not overload everything.
-
-Our (ORIL) goal for the task is to see how deeply you understand the technology and figure out how you find solutions in different situations.
-
-For the test task, you have to create your own GitHub repository.
-
-DEADLINE: 1-2 days.
-
 ### Technical requirements
 - Java 11+
 - String Boot, Spring Data.
-- MongoDB.
+- MySQL.
 
 
 Technical task itself consists of two main parts and one optional:
